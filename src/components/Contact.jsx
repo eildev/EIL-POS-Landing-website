@@ -133,7 +133,7 @@ const Contact = () => {
                         <div className="border border-[#E0E0E0] flex items-center mb-5 relative">
                             <select id="source" name='source' value={formData.source}
                                 onChange={handleChange} className="w-full lg:text-black text-white text-[14px] px-5 py-[13px] border-none outline-none">
-                                <option value="" className="text-black">How did you find us?</option>
+                                <option value="" disabled className="text-black">How did you find us?</option>
                                 <option value="Option 1" className="text-black">Option 1</option>
                                 <option value="Option 2" className="text-black">Option 2</option>
                             </select>
