@@ -1,0 +1,48 @@
+[
+    {
+      "img": "../src/assets/POS-1.webp",
+      "title": "POS System",
+      "description": "Complete sales, purchase, return, and commission tracking system."
+    },
+    {
+      "img": "../src/assets/stock.jpeg",
+      "title": "Stock & Warehouse",
+      "description": "Manage stock levels, transfer, expiry, and barcode generation."
+    },
+    {
+      "img": "../src/assets/hrm.webp",
+      "title": "HRM Management",
+      "description": "Handle employee data, payroll, roles, and evaluations."
+    },
+    {
+      "img": "../src/assets/crm.jpg",
+      "title": "CRM Management",
+      "description": "Track customer purchases, rewards, and marketing campaigns."
+    },
+    {
+      "img": "../src/assets/accounting.jpg",
+      "title": "Accounting",
+      "description": "Manage loans, expenses, accounts, and invoice payments."
+    },
+    {
+      "img": "../src/assets/branch.png",
+      "title": "Branch Management",
+      "description": "Monitor branch sales, stock transfers, and staff assignments."
+    },
+    {
+      "img": "../src/assets/POS-1.webp",
+      "title": "Damage & Wastage",
+      "description": "Log and analyze damage, wastage, and supplier returns."
+    },
+    {
+      "img": "../src/assets/POS-1.webp",
+      "title": "Reporting",
+      "description": "Generate sales, stock, ledger, and performance reports."
+    },
+    {
+      "img": "../src/assets/POS-1.webp",
+      "title": "Store Management",
+      "description": "Control product variations, pricing, and bulk updates."
+    }
+  ]
+  
