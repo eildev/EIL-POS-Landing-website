@@ -60,20 +60,76 @@ const Contact = () => {
                     </p>
 
                     <form onSubmit={handleSubmit}>
-                        <div className="border border-[#E0E0E0] px-5 py-[13px] flex items-center mb-5">
-                            <label htmlFor="name" className="text-sm lg:text-[#828282] text-white flex gap-1 items-center">Name <span className="text-red-600">*</span></label>
-                            <input required value={formData.name}
-                                onChange={handleChange} type="text" id="name" name='name' className="border-none outline-none ml-2 w-full bg-transparent text-white lg:text-black" />
+                
+                        <div className="relative mb-5">
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                                placeholder=" "
+                                className="peer w-full border border-[#E0E0E0] bg-transparent px-5 py-4 text-sm text-white lg:text-black focus:outline-none"
+                            />
+                            <label
+                                htmlFor="name"
+                                className={`absolute left-5 transition-all duration-200 bg-white text-sm text-white lg:text-[#828282] 
+      ${formData.name ? 'top-[-8px] text-xs' : 'top-1/2 -translate-y-1/2'} 
+      peer-focus:top-[-8px] peer-focus:text-xs peer-focus:-translate-y-0
+    `}
+                            >
+                                Name <span className="text-red-600">*</span>
+                            </label>
                         </div>
-                        <div className="border border-[#E0E0E0] px-5 py-[13px] flex items-center mb-5">
-                            <label htmlFor="email" className="text-sm lg:text-[#828282] text-white flex gap-1 items-center">Email</label>
-                            <input name='email' value={formData.email}
-                                onChange={handleChange} type="email" id="email" className="border-none outline-none ml-2 w-full bg-transparent text-white lg:text-black" />
-                        </div><div className="border border-[#E0E0E0] px-5 py-[13px] flex items-center mb-5">
-                            <label htmlFor="phone" className="text-sm lg:text-[#828282] text-white flex gap-1 items-center text-nowrap">Phone number <span className="text-red-600">*</span></label>
-                            <input name='phone' value={formData.phone}
-                                onChange={handleChange} required type="number" id="phone" className="border-none outline-none ml-2 w-full bg-transparent text-white lg:text-black" />
+
+    
+                        <div className="relative mb-5">
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                placeholder=" "
+                                className="peer w-full border border-[#E0E0E0] bg-transparent px-5 py-4 text-sm text-white lg:text-black focus:outline-none"
+                            />
+                            <label
+                                htmlFor="email"
+                                className={`absolute left-5 transition-all duration-200 bg-white text-sm text-white lg:text-[#828282] 
+      ${formData.email ? 'top-[-8px] text-xs' : 'top-1/2 -translate-y-1/2'} 
+      peer-focus:top-[-8px] peer-focus:text-xs peer-focus:-translate-y-0
+    `}
+                            >
+                                Email
+                            </label>
                         </div>
+
+                
+                        <div className="relative mb-5">
+                            <input
+                                type="number"
+                                id="phone"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                required
+                                placeholder=" "
+                                className="peer w-full border border-[#E0E0E0] bg-transparent px-5 py-4 text-sm text-white lg:text-black focus:outline-none"
+                            />
+                            <label
+                                htmlFor="phone"
+                                className={`absolute left-5 transition-all duration-200 bg-white text-sm text-white lg:text-[#828282] 
+      ${formData.phone ? 'top-[-8px] text-xs left-5' : 'top-1/2 -translate-y-1/2 left-5'} 
+      peer-focus:top-[-8px] peer-focus:text-xs peer-focus:-translate-y-0
+    `}
+                            >
+                                Phone number <span className="text-red-600">*</span>
+                            </label>
+                        </div>
+
+
+
                         <div className="border border-[#E0E0E0] flex items-center mb-5 relative">
                             <select id="source" name='source' value={formData.source}
                                 onChange={handleChange} className="w-full lg:text-black text-white text-[14px] px-5 py-[13px] border-none outline-none">
@@ -116,14 +172,14 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="w-full lg:max-w-[545px] lg:h-[700px] h-[500px] lg:p-0 pt-10 pb-5">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.638100410237!2d90.43345957605148!3d23.760281488395535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b989c099c321%3A0xe00e47cc2118302!2sEclipse%20Intellitech%20Limited!5e0!3m2!1sen!2sbd!4v1744260020886!5m2!1sen!2sbd"
-    className="w-full h-full border-0 rounded-lg"
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.638100410237!2d90.43345957605148!3d23.760281488395535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b989c099c321%3A0xe00e47cc2118302!2sEclipse%20Intellitech%20Limited!5e0!3m2!1sen!2sbd!4v1744260020886!5m2!1sen!2sbd"
+                        className="w-full h-full border-0 rounded-lg"
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
 
 
             </div>

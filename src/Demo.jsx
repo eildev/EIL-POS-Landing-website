@@ -60,32 +60,114 @@ const Demo = () => {
                 </p>
 
                 <form onSubmit={handleSubmit}>
-                    <div className="border border-[#E0E0E0] px-5 py-[13px] flex items-center mb-5">
-                        <label htmlFor="name" className="text-sm text-[#828282] flex gap-1 items-center text-nowrap">Company / Your Name <span className="text-red-600">*</span></label>
-                        <input required value={formData.name}
-                            onChange={handleChange} type="text" id="name" name='name' className="border-none outline-none ml-2 w-full bg-transparent text-white lg:text-black" />
-                    </div>
-                    <div className="border border-[#E0E0E0] px-5 py-[13px] flex items-center mb-5">
-                        <label htmlFor="email" className="text-sm text-[#828282] flex gap-1 items-center">Email</label>
-                        <input name='email' value={formData.email}
-                            onChange={handleChange} type="email" id="email" className="border-none outline-none ml-2 w-full bg-transparent text-white lg:text-black" />
-                    </div><div className="border border-[#E0E0E0] px-5 py-[13px] flex items-center mb-5">
-                        <label htmlFor="phone" className="text-sm text-[#828282] flex gap-1 items-center text-nowrap">Phone number <span className="text-red-600">*</span></label>
-                        <input name='phone' value={formData.phone}
-                            onChange={handleChange} required type="number" id="phone" className="border-none outline-none ml-2 w-full bg-transparent text-white lg:text-black" />
-                    </div>
-                    <div className="border border-[#E0E0E0] px-5 py-[13px] flex items-center mb-5">
-                        <label htmlFor="type" className="text-sm text-[#828282] flex gap-1 items-center text-nowrap">Business Type <span className="text-red-600">*</span></label>
-                        <input name='type' value={formData.type}
-                            onChange={handleChange} required type="text" id="type" className="border-none outline-none ml-2 w-full bg-transparent text-white lg:text-black" />
-                    </div>
-                    <div className="border border-[#E0E0E0] px-5 py-[13px] flex justify-start items-start mb-5">
-                        <label htmlFor="msg" className="text-sm text-[#828282] flex gap-1 items-center text-nowrap">Message 
-                            {/* <span className="text-red-600">*</span> */}
-                            </label>
-                        <textarea name='msg' value={formData.msg} rows={3}
-                            onChange={handleChange} type="text" id="msg" className="border-none outline-none ml-2 w-full bg-transparent text-white lg:text-black"></textarea>
-                    </div>
+                
+<div className="relative mb-5">
+  <input
+    type="text"
+    id="name"
+    name="name"
+    value={formData.name}
+    onChange={handleChange}
+    required
+    placeholder=" "
+    className="peer w-full border border-[#E0E0E0] bg-transparent px-5 py-4 text-sm text-white lg:text-black focus:outline-none"
+  />
+  <label
+    htmlFor="name"
+    className={`absolute left-5 transition-all duration-200 bg-white text-sm text-white lg:text-[#828282]
+      ${formData.name ? 'top-[-8px] text-xs' : 'top-1/2 -translate-y-1/2'}
+      peer-focus:top-[-8px] peer-focus:text-xs peer-focus:-translate-y-0`}
+  >
+    Company / Your Name <span className="text-red-600">*</span>
+  </label>
+</div>
+
+
+<div className="relative mb-5">
+  <input
+    type="email"
+    id="email"
+    name="email"
+    value={formData.email}
+    onChange={handleChange}
+    placeholder=" "
+    className="peer w-full border border-[#E0E0E0] bg-transparent px-5 py-4 text-sm text-white lg:text-black focus:outline-none"
+  />
+  <label
+    htmlFor="email"
+    className={`absolute left-5 transition-all duration-200 bg-white text-sm text-white lg:text-[#828282]
+      ${formData.email ? 'top-[-8px] text-xs' : 'top-1/2 -translate-y-1/2'}
+      peer-focus:top-[-8px] peer-focus:text-xs peer-focus:-translate-y-0`}
+  >
+    Email
+  </label>
+</div>
+
+
+<div className="relative mb-5">
+  <input
+    type="number"
+    id="phone"
+    name="phone"
+    value={formData.phone}
+    onChange={handleChange}
+    required
+    placeholder=" "
+    className="peer w-full border border-[#E0E0E0] bg-transparent px-5 py-4 text-sm text-white lg:text-black focus:outline-none"
+  />
+  <label
+    htmlFor="phone"
+    className={`absolute left-5 transition-all duration-200 bg-white text-sm text-white lg:text-[#828282]
+      ${formData.phone ? 'top-[-8px] text-xs' : 'top-1/2 -translate-y-1/2'}
+      peer-focus:top-[-8px] peer-focus:text-xs peer-focus:-translate-y-0`}
+  >
+    Phone number <span className="text-red-600">*</span>
+  </label>
+</div>
+
+
+<div className="relative mb-5">
+  <input
+    type="text"
+    id="type"
+    name="type"
+    value={formData.type}
+    onChange={handleChange}
+    required
+    placeholder=" "
+    className="peer w-full border border-[#E0E0E0] bg-transparent px-5 py-4 text-sm text-white lg:text-black focus:outline-none"
+  />
+  <label
+    htmlFor="type"
+    className={`absolute left-5 transition-all duration-200 bg-white text-sm text-white lg:text-[#828282]
+      ${formData.type ? 'top-[-8px] text-xs' : 'top-1/2 -translate-y-1/2'}
+      peer-focus:top-[-8px] peer-focus:text-xs peer-focus:-translate-y-0`}
+  >
+    Business Type <span className="text-red-600">*</span>
+  </label>
+</div>
+
+
+<div className="relative mb-5">
+  <textarea
+    id="msg"
+    name="msg"
+    rows={3}
+    value={formData.msg}
+    onChange={handleChange}
+    placeholder=" "
+    className="peer w-full border border-[#E0E0E0] bg-transparent px-5 py-4 text-sm text-white lg:text-black focus:outline-none resize-none"
+  />
+  <label
+    htmlFor="msg"
+    className={`absolute left-5 transition-all duration-200 bg-white text-sm text-white lg:text-[#828282]
+      ${formData.msg ? 'top-[-8px] text-xs' : 'top-3.5'}
+      peer-focus:top-[-8px] peer-focus:text-xs`}
+  >
+    Message
+  </label>
+</div>
+
                     <button type="submit" className="bg-[#0F70EB] py-[14px] font-bold w-full text-white">SENT</button>
 
                 </form>
