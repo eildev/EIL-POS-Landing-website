@@ -11,7 +11,7 @@ import Package from "./components/Package"
 
 function Home() {
 
-
+  const isHome = true;
   return (
     <>
       {/* <Nav></Nav> */}
@@ -20,7 +20,7 @@ function Home() {
       <Beginner></Beginner>
       {/* <Package></Package> */}
       <Brands></Brands>
-      <Faq></Faq>
+      <Faq isHome ={isHome}></Faq>
       <Contact></Contact>
       {/* <Download></Download> */}
       {/* <Footer></Footer> */}

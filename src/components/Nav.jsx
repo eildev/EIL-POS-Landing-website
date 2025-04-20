@@ -86,7 +86,7 @@ const Nav = () => {
 
                             className="md:mr-[34px] md:text-white tracking-[1px] py-[10px] text-center" href="#"
                         >
-                            FAQ’s
+                           <Link to='/faq'>FAQ’s</Link>  
 
                         </Link>
                         <Link to={"/demo"} onClick={() => setIsOpen(!isOpen)}

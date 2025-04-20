@@ -18,7 +18,7 @@ const Beginner = () => {
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center text-center p-6">
                         <div>
-                            <h3 className="text-white text-2xl font-semibold mb-3">Click to View POS System</h3>
+                            <h3 className="text-white text-2xl font-semibold mb-3">Submit a Request for a Demo</h3>
                             <p className="text-gray-200 text-sm w-[350px] mx-auto"> Get a live preview of how our POS software works in real time.</p>
                         </div>
                     </div>

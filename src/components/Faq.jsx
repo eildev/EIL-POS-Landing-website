@@ -1,50 +1,60 @@
 import { useState } from "react";
 
 
-const Faq = () => {
+const Faq = ({isHome}) => {
 
     const [openIndex, setOpenIndex] = useState(null);
     const items = [
         {
-          question: "What is a POS system and why use it?",
-          answer: "A POS system helps manage sales, inventory, invoices, and payments efficiently."
+          question: "What types of businesses can use Eclipse POS?",
+          answer: "Eclipse POS is versatile and designed for various industries, including retail, service businesses, and more. Whether you run a clothing store, grocery shop, electronics store, or other types of businesses, EclipsePOS is tailored to meet your needs. It’s scalable for small, medium, and large enterprises, ensuring a perfect fit for any business size."
         },
         {
-          question: "How does the stock management feature work?",
-          answer: "It tracks inventory in real time, manages transfers, expiry, and low stock alerts."
+          question: "Can I transfer data from my current POS system to Eclipse POS?",
+          answer: "Yes! If your current POS system allows data export (e.g., customer and inventory details), we can help you transfer it to Eclipse POS. Contact our support team for assistance with the process."
         },
         {
-          question: "Can I manage multiple branches with this system?",
-          answer: "Yes, you can monitor and manage sales, stock, and performance across all branches."
+          question: "How much does Eclipse POS cost?",
+          answer: "The cost of Eclipse POS varies depending on your business size and required features. A basic package is available at an affordable price, while advanced systems with additional functionalities are priced higher. Contact us for a personalized quote."
         },
         {
-          question: "Is there HR and payroll management available?",
-          answer: "Yes, HRM includes employee profiles, payroll, evaluations, and permission setup."
+          question: "How long does it take to set up Eclipse POS?",
+          answer: "Setting up Eclipse POS is quick and straightforward! For basic setups, it can take just a few hours. More advanced configurations, including staff training, may take a few days to ensure everything runs smoothly."
         },
         {
-          question: "How does the CRM feature benefit my business?",
-          answer: "CRM helps track customer purchases, run campaigns, and manage due reminders."
+          question: "What security measures does Eclipse POS have in place?",
+          answer: "Eclipse POS prioritizes your security with features like: 1.Encryption of sensitive data 2.User authentication controls 3.Regular software updates to safeguard against vulnerabilities"
         },
         {
-          question: "Does the system generate reports automatically?",
-          answer: "Yes, you get sales, inventory, expense, and performance reports with export options."
+          question: "Can I manage inventory with Eclipse POS?",
+          answer: "Yes, Eclipse POS offers advanced inventory management tools. Track stock levels in real time, receive low-stock alerts, and generate detailed inventory reports to optimize your operations."
         },
+        {
+          question: "What hardware is compatible with Eclipse POS?",
+          answer: "Eclipse POS works seamlessly with a wide range of hardware, including barcode scanners, receipt printers, and cash drawers. Contact us for a list of recommended devices."
+        },
+        {
+          question: "How can I get started with Eclipse POS?",
+          answer: "Getting started is easy! Contact our sales team to schedule a demo or request a quote. We’ll guide you through the setup process and ensure your business is ready to thrive with Eclipse POS."
+        },
+       
       ];
       
 
 
     return (
         <div id="faq" className="mt-20">
+
+            <div className="bg-[#F7FAFD] md:pb-[95px] py-10">
             <div className="content_bg py-[31px] w-full lg:mb-[50px] mb-8 max-w-[1440px] mx-auto">
                 <div className="flex md:justify-between justify-center items-center w-[95%] mx-auto flex-wrap gap-5">
                     <h1 className="md:text-[28px] text-[20px] text-[#170F49] font-bold">3. FAQ Accordion V3</h1>
                     <button className="md:text-[18.55px] font-medium text-[#0F70EB] rounded-[58px] bg-[#0F70EB] bg-opacity-[11%] px-[32px] py-[18px]">Preview Cloneable</button>
                 </div>
             </div>
-            <div className="bg-[#F7FAFD] md:py-[95px] py-10">
                 <div className="max-w-[1338px] w-[95%] mx-auto grid lg:grid-cols-2 gap-[26px] ">
                     {
-                        items.map((item, index) => (
+                         (isHome ? items.slice(0, 4) : items).map((item, index) => (
                             <div key={index} className={`bg-white rounded-[18.55px] px-[38px] py-[47px] duration-300 custom_shadow`}>
                                 <h1 onClick={() => setOpenIndex(openIndex === index ? null : index)} className="flex justify-between items-center text-[#170F49] xl:text-[25.50px] text-[18px] md:text-[20px] font-medium gap-4">
                                     {item.question}
