@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Faq = ({isHome}) => {
@@ -48,9 +49,11 @@ const Faq = ({isHome}) => {
             <div className="bg-[#F7FAFD] md:pb-[95px] py-10">
             <div className="content_bg py-[31px] w-full lg:mb-[50px] mb-8 max-w-[1440px] mx-auto">
                 <div className="flex md:justify-between justify-center items-center w-[95%] mx-auto flex-wrap gap-5">
-                    <h1 className="md:text-[28px] text-[20px] text-[#170F49] font-bold">3. FAQ Accordion V3</h1>
-                    <button className="md:text-[18.55px] font-medium text-[#0F70EB] rounded-[58px] bg-[#0F70EB] bg-opacity-[11%] px-[32px] py-[18px]">Preview Cloneable</button>
-                </div>
+                    <h1 className="md:text-[28px] text-[20px] text-[#170F49] font-bold">Frequently Asked Question (FAQ)</h1>
+                    {location.pathname !== '/faq' && (
+                    <button className="md:text-[18.55px] font-medium text-[#0F70EB] rounded-[58px] bg-[#0F70EB] bg-opacity-[11%] px-[32px] py-[18px]"><Link to="/faq">Explore All</Link></button>
+                  )}
+                    </div>
             </div>
                 <div className="max-w-[1338px] w-[95%] mx-auto grid lg:grid-cols-2 gap-[26px] ">
                     {

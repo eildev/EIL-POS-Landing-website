@@ -1,10 +1,9 @@
-import spotify from "../assets/Spotify svg.png";
-import stripe from "../assets/Stripe svg.png";
-import reddit from "../assets/Reddit svg.png";
-import pinterest from "../assets/Pinterest svg.png";
-import google from "../assets/Google svg.png";
+import spotify from "../assets/Glowthentic-Logo.svg";
+import stripe from "../assets/New-Logo-Sobrokom.png";
+// import reddit from "../assets/Reddit svg.png";
+import pinterest from "../assets/944228552.webp";
+import google from "../assets/1464025244.png";
 import Marquee from "react-fast-marquee";
-
 
 const items = [
     {
@@ -19,9 +18,9 @@ const items = [
     {
         image: stripe,
     },
-    {
-        image: reddit,
-    }
+    // {
+    //     image: reddit,
+    // }
 ]
 
 const Brands = () => {

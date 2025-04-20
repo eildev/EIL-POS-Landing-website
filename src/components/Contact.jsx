@@ -134,8 +134,11 @@ const Contact = () => {
                             <select id="source" name='source' value={formData.source}
                                 onChange={handleChange} className="w-full lg:text-black text-white text-[14px] px-5 py-[13px] border-none outline-none">
                                 <option value="" disabled className="text-black">How did you find us?</option>
-                                <option value="Option 1" className="text-black">Option 1</option>
-                                <option value="Option 2" className="text-black">Option 2</option>
+                                <option value="google" className="text-black">Google</option>
+                                <option value="facebook" className="text-black">Facebook</option>
+                                <option value="instagram" className="text-black">Instagram</option>
+                                <option value="twiter" className="text-black">Twiter</option>
+                                <option value="others" className="text-black">Others</option>
                             </select>
                             <svg className="absolute right-[20px]" width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 6L12 0L0 -5.24537e-07L6 6Z" fill="black" />

@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 // import features from '../public/feature.json';
-import image1 from "../src/assets/POS-1.webp"
-import image2 from "../src/assets/stock.jpeg"
-import image3 from "../src/assets/hrm.webp"
-import image4 from "../src/assets/crm.jpg"
-import image5 from "../src/assets/accounting.jpg"
-import image6 from "../src/assets/branch.png"
-import image7 from "../src/assets/POS-1.webp"
-import image8 from "../src/assets/repoting.jpg"
-import image9 from "../src/assets/store.jpg"
+import image1 from "../src/assets/POS-1.webp";
+import image2 from "../src/assets/stock.jpeg";
+import image3 from "../src/assets/hrm.webp";
+import image4 from "../src/assets/crm.jpg";
+import image5 from "../src/assets/accounting.jpg";
+import image6 from "../src/assets/branch.png";
+import image7 from "../src/assets/POS-1.webp";
+import image8 from "../src/assets/repoting.jpg";
+import image9 from "../src/assets/store.jpg";
 
 const features = [
   {

@@ -19,7 +19,7 @@ const Footer = () => {
             links: [
                 { name: 'Software Development', url: 'https://eclipseintellitech.com/services/software-development/' },
                 { name: 'Web Design & Development', url: 'https://eclipseintellitech.com/services/web-design-development/' },
-                { name: 'Graphics Design', url: null },
+                { name: 'Graphics Design', url: 'https://eclipseintellitech.com/services/' },
                 { name: 'Digital Marketing', url: 'https://eclipseintellitech.com/services/digital-marketing/' },
                 { name: 'Mobile Apps Development', url: 'https://eclipseintellitech.com/services/mobile-apps-development/' }
             ]
